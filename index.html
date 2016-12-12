@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="./jquery.min.js"></script>
+        <script src="index.js"></script>
+        <style>
+            .btn{
+                box-sizing : border-box; 
+                margin : 30px;
+                border : 1px solid rgba(128, 128, 128, 128);
+                padding : 12px;
+            }
+            #data {
+                width: 200px;
+                height: 300px;
+                background: rgb(100,100,100);
+            }
+            #accel { 
+                border: 1px solid white;
+                color: white;
+            }
+            #gyro {
+                border: 1px solid white;
+                color: white;
+            }
+        </style>
+        <title>IceBreak</title>
+    </head>
+    <body>
+        <div id="data">
+            <div id="accel">
+                <div id="accel_x"></div>
+                <div id="accel_y"></div>
+                <div id="accel_z"></div>
+            </div>
+            <div id="gyro">
+                <div id="gyro_x"></div>
+                <div id="gyro_y"></div>
+                <div id="gyro_z"></div>
+            </div>
+        </div>
+        <input type="button" id="btn1" class="btn" value="start"></button>
+        <audio id="icebox">
+            <source src="src/icebox.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
